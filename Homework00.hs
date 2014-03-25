@@ -43,6 +43,9 @@ data IsNumber a = IsNumber
     { (+) :: a -> a -> a
     , (*) :: a -> a -> a }
 
+mulNumber = (*)
+sumNumber = (+)
+
 isNumberInt :: IsNumber Int
 isNumberInt = IsNumber sumInt mulInt
 

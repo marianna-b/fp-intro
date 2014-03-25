@@ -38,3 +38,8 @@ isVectorList = H00.IsVector zipList mapList foldList
 
 isNumberIsVector :: H00.IsNumber a -> H00.IsVector v -> H00.IsNumber (v a)
 isNumberIsVector (H00.IsNumber (+) (*)) (H00.IsVector zip map fold) = H00.IsNumber (zip (+)) (zip (*))
+
+isNumberListInt = isNumberIsVector H00.isNumberInt isVectorList
+
+mulList = (H00.mulNumber) isNumberListInt
+sumList = (H00.sumNumber) isNumberListInt
