@@ -1,5 +1,7 @@
 {-# LANGUAGE NoImplicitPrelude, OverloadedStrings, FlexibleInstances #-}
 
+module Homework02 where
+
 import qualified Homework00 as H00
 import Homework01
 import Base
@@ -43,3 +45,5 @@ isNumberListInt = isNumberIsVector H00.isNumberInt isVectorList
 
 mulList = (H00.mulNumber) isNumberListInt
 sumList = (H00.sumNumber) isNumberListInt
+
+
